@@ -1,0 +1,98 @@
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView
+	        android:id="@+id/nl_titletext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/nl_titletext"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/nl_explanation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nl_titletext"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/nl_explanation" />
+
+	    <TextView
+	        android:id="@+id/nl_1_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nl_explanation"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/nl_1_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    	   		    	    	    	
+	    <TextView
+	        android:id="@+id/nl_1_explanation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nl_1_title"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/nl_1_explanation" />		  
+	        
+	    <TextView
+	        android:id="@+id/nl_2_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nl_1_explanation"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/nl_2_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    	   		    	    	    	
+	    <TextView
+	        android:id="@+id/nl_2_explanation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nl_2_title"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/nl_2_explanation" />
+	    	
+	    <TextView
+	        android:id="@+id/nl_3_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nl_2_explanation"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/nl_3_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    	   		    	    	    	
+	    <TextView
+	        android:id="@+id/nl_3_explanation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/nl_3_title"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/nl_3_explanation" />	            
+	</RelativeLayout>
+</ScrollView>

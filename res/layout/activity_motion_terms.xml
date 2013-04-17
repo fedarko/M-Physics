@@ -1,0 +1,199 @@
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/MotionTermsScrollView" >
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView
+	        android:id="@+id/mt_titleText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/mt_title"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	<!-- Position -->
+	    <TextView
+	        android:id="@+id/mt_positionTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/mt_titleText"
+	        android:text="@string/mt_positionTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/mt_positionDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/mt_positionTitle"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="5dp"        
+	        android:text="@string/mt_positionDesc"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	<!-- Displacement and Distance; "positionEtc" -->
+		<TextView
+	        android:id="@+id/mt_positionEtcTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/mt_positionDesc"
+	        android:text="@string/mt_positionEtcTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/mt_positionEtcDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/mt_positionEtcTitle"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="5dp"        
+	        android:text="@string/mt_positionEtcDesc"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <ImageView
+	        android:id="@+id/mt_positionTimeGraph"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/mt_positionEtcDesc"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/mt_positiontimegraph"
+	        android:contentDescription="@string/mt_positionTimeGraphCaption" />	    
+	    	    
+	<!-- Velocity -->
+	    <TextView
+	        android:id="@+id/mt_velTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/mt_positionTimeGraph"
+	        android:text="@string/mt_velTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/mt_velDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/mt_velTitle"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="5dp"        
+	        android:text="@string/mt_velDesc"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <ImageView
+	        android:id="@+id/mt_velTimeGraph"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/mt_velDesc"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/mt_veltimegraph"
+	        android:contentDescription="@string/mt_velTimeGraphCaption" />
+	<!-- Speed -->	    
+	    <TextView
+	        android:id="@+id/mt_spdTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/mt_velTimeGraph"
+	        android:text="@string/mt_spdTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/mt_spdDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/mt_spdTitle"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="5dp"        
+	        android:text="@string/mt_spdDesc"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	    
+	    <ImageView
+	        android:id="@+id/mt_spdTimeGraph"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/mt_spdDesc"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/mt_spdtimegraph"
+	        android:contentDescription="@string/mt_spdTimeGraphCaption" />
+	    	    
+	<!-- Acceleration --> 
+		<TextView
+	        android:id="@+id/mt_accelTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/mt_spdTimeGraph"
+	        android:text="@string/mt_accelTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/mt_accelDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/mt_accelTitle"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="5dp"        
+	        android:text="@string/mt_accelDesc"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	    <ImageView
+	        android:id="@+id/mt_accelTimeGraph"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/mt_accelDesc"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/mt_acceltimegraph"
+	        android:contentDescription="@string/mt_accelTimeGraphCaption" />  
+	        
+	<!-- Jerk, etc. --> 
+		<TextView
+	        android:id="@+id/mt_jerkEtcTitle"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/mt_accelTimeGraph"
+	        android:text="@string/mt_jerkEtcTitle"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <TextView
+	        android:id="@+id/mt_jerkEtcDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/mt_jerkEtcTitle"
+	        android:layout_marginTop="2dp"
+	        android:layout_marginLeft="5dp"        
+	        android:text="@string/mt_jerkEtcDesc"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	</RelativeLayout>
+</ScrollView>

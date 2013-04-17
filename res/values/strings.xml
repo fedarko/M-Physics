@@ -1,0 +1,217 @@
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<resources>
+
+    <string name="app_name">M-Physics</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_credits">Credits</string>
+    <string name="title_activity_main">M-Physics</string>
+    <string name="title_question">What do you want to learn about?</string>
+    <string name="WhatButton">What is Physics?</string>
+    <string name="WhereButton">Where should I start?</string>
+    <string name="KinematicsButton">Kinematics</string>
+    <string name="NewtonsLawsButton">Newton\'s Laws of Motion</string>
+    <string name="WEPButton">Work, Energy, and Power</string>
+    <string name="test_prep_text">Information to prepare for Standardized Tests:</string>
+    <string name="title_activity_what_is_physics">M-Physics</string>
+    <string name="what_is_physics_title">What is Physics?</string>
+    <string name="what_is_physics_explanation">\tThat\'s actually a really good question! <u>Physics</u> is a type of science that covers a very wide range of subjects. It covers things like motion, but also things like energy, particles, quantum mechanics, and everything in between!</string>
+    <string name="title_activity_where_to_start">M-Physics</string>
+    <string name="where_to_start_title">Where should I start?</string>
+    <string name="where_to_start_explanation">\tOne thing you should probably do first is set your age and math level in the Settings screen (which you can get to from either your phone\'s <u>menu</u> button or the drop-down menu in the top-right of the screen). If you want an explanation for exactly what this does, feel free to check out the page called <u>Information about Settings</u> from the main menu.\n\n\tPhysics is a very broad field. So what you decide to start with may differ from what someone else wants to start with! However, there are many concepts that you should know regardless of what you want to learn about. Simple kinematics is very useful, as is knowing Newton\'s Laws of Motion. However, depending on how much you know already, you may decide to start somewhere more advanced - and that\'s fine!</string>
+    <string name="goodluck">Best of luck!</string>
+    <string name="MassWeightButton">Mass vs. Weight</string>
+    <string name="title_activity_kinematics">M-Physics</string>
+    <string name="kineqs_title">The Equations of Kinematics</string>
+    <string name="kineqs_explanation">An object\'s motion in two dimensions can be simulated using a set of five equations. These equations relate five key variables pertaining to the object\'s motion. The variables are:</string>
+    <string name="kineqs_variableList">-Initial Velocity (<i>v<sub>i</sub></i> or <i>v<sub>0</sub></i>)\n-Final Velocity (<i>v<sub>f</sub></i>)\n-Acceleration (<i>a</i>)\n-Distance (<i>d</i>)\n-Elapsed Time (<i>t</i>)</string>
+    <string name="kineqs_equationExplanation">The equations that involve these variables are:</string>
+    <string name="kineqs_equationList"><i>v<sub>f</sub> = v<sub>i</sub> + at\nv<sub>f</sub><sup>2</sup> = v<sub>i</sub><sup>2</sup> + 2ad\nd = v<sub>i</sub>t + &#189;at<sup>2</sup>\nd = &#189;(v<sub>i</sub> + v<sub>f</sub>)t\nd = v<sub>f</sub>t - &#189;at<sup>2</sup></i></string>
+    <string name="kineqs_equationElaboration">As you can see, each of the above equations only uses <u>four</u> of the five variables. When you\'re trying to solve a problem, you\'ll generally know three of the variables, want to find one of them, and not have or need another one. Pick the equation that doesn\'t involve the irrelevant unknown variable and solve for what you need to find, the relevant unknown variable.</string>
+    <string name="title_activity_kin_eqs">M-Physics</string>
+    <string name="kinematics_titletext">Kinematics</string>
+    <string name="kinematics_explanation">\tKinematics is a topic in physics that covers motion. If you describe how an object moves, you\'re using some form of kinematics.</string>
+    <string name="kineqs_overview">\tMost of simple kinematics makes use of five equations that affect exactly how an object moves. These are called <u>The Kinematic Equations</u>. This lesson is most effective after reviewing the above lesson on motion terms.</string>
+    <string name="KinEqsButton">Kinematic Equations</string>
+    <string name="title_activity_motion_terms">M-Physics</string>
+    <string name="mt_title">Motion Terms</string>
+    <string name="mt_positionTitle">Position</string>
+    <string name="mt_velTitle">Velocity</string>
+    <string name="mt_accelTitle">Acceleration</string>
+    <string name="mt_positionDesc">\tPosition is, really, exactly what it sounds like: the relative location of an object. It is based on an object\'s location relative to a reference point.\n\n\tPosition is often represented as a <i>function of time</i>, which allows us to see how it changes over time. The function of position has many different abbreviations; the most common are <i>s(t)</i> and <i>r(t)</i>. Additionally, this allows us to <u>derive</u> an object\'s position in order to find the object\'s velocity and acceleration over time. A sample graph in which position is a function of time, called a <u>Position-Time Graph</u>, is shown below.\n</string>
+    <string name="mt_positionEtcTitle">Displacement and Distance</string>
+    <string name="mt_positionEtcDesc">\tYou may have heard of some other terms related to position: <u>displacement</u> and <u>distance</u>. Displacement and Distance mean different things, but they\'re actually pretty similar!\n\n<u>Displacement</u> is how far something has travelled relative to its starting position. So in the position-time graph below, the displacement is equal to <i>B - A</i>. Displacement is pretty similar to position; position is the displacement of something from an origin or some other relative position. In the position-time graph below, displacement is equal to 0.\n\n\t<u>Distance</u>, however, is the total amount an object has travelled. Imagine you go running north in a straight line for one mile, turn around, and come back south one mile in a straight line again. Your displacement would be zero, since you will end up at the same position you started at, but your distance travelled would be equal to how far north you travelled plus how far south you travelled, or 1 + 1 = 2 miles. In the position-time graph below, distance travelled would be equal to how far you went in each direction added together. This would be\n(1 &#8211; 0)\n + (1 &#8211; (-1))\n + (0 &#8211; (-1))\n = 1 + 2 + 1\n = 4.</string>
+    <string name="mt_positionTimeGraphCaption">Position-Time Graph</string>
+    <string name="mt_velDesc">\tVelocity is the first derivative of position. What this means is that, at any given time <i>t</i>, the position <i>s(t)</i> of an object is changing instantaneously at its velocity <i>v(t)</i>. Essentially, velocity is the rate of change of position. Velocity as a function of time is abbreviated <i>v(t)</i>.</string>
+    <string name="mt_velTimeGraphCaption">Velocity-Time Graph</string>
+    <string name="mt_spdTitle">Wait, what about Speed?</string>
+    <string name="mt_spdDesc">\tWe often use \"speed\" and \"velocity\" interchangeably. This isn\'t really correct - <i>speed</i> is like velocity in that it measures an object\'s rate of change of position, but it is <u>unlike</u> velocity in that it doesn\'t have a direction. This is because speed is what we call a <u>scalar</u> quantity - it has a magnitude (the actual value of the speed, e.g. \"3 <i>m/s</i>\"), but no direction (so not \"3 <i>m/s north</i>\"). Velocity, however, has a direction - it is a <u>vector</u>, so it can be negative or something like \"3 <i>m/s</i> north\". You can think of it this way - velocity can be negative since that just means it\'s moving \"backwards\" in whatever coordinate system we\'re using, but speed will only be positive. Mathematically, you can define speed as the <i>magnitude</i>, or absolute value, of velocity.\n\n\tIt\'s important to note that absolute value is denoted by vertical lines around something, so the absolute value of velocity is written as |v(t)|.</string>
+    <string name="mt_spdTimeGraphCaption">Speed-Time Graph</string>
+    <string name="mt_accelDesc">\tAcceleration is the second derivative of position and the first derivative of velocity. It is the rate of change of velocity, and thus the rate of change of the rate of change of position. It is abbreviated <i>a(t)</i>. You can think of acceleration as how fast something is <i>speeding up</i> or <i>slowing down</i>.</string>
+    <string name="mt_accelTimeGraphCaption">Acceleration-Time Graph</string>
+    <string name="mt_jerkEtcTitle">Deriving Acceleration?</string>
+    <string name="mt_jerkEtcDesc">\tFor most physics problems now, you won\'t need to worry about deriving anything beyond acceleration. Just as acceleration is the rate of change of velocity, <i>jerk</i> is the rate of change of acceleration. For most first-year physics classes, you\'ll probably only see jerk and its derivatives mentioned a few times, if at all.\n\n\t<u>The Kinematics Equations</u>, a topic you may have not have viewed yet, only work for objects that accelerate constantly. What this means is that the acceleration in these problems doesn\'t change, so its derivative and its higher order derivatives will always be 0. This type of motion is called <u>Uniformly Accelerated Motion</u>, and it\'s nice to be able to observe when or when not it occurs.</string>
+    <string name="MotionTermsButton">Motion Terms</string>
+    <string name="motionterms_overview">\tThere are some terms that are important to know to get most of kinematics. These terms are explained in the following lesson.</string>
+    <string name="title_activity_newtons_laws">M-Physics</string>
+    <string name="nl_titletext">Newton\'s Laws of Motion</string>
+    <string name="nl_explanation">\tIsaac Newton observed three main \"laws\" that are very important to physics today. If you didn\'t know already, these are called <u>Newton\'s Laws of Motion</u>. Let\'s discuss them in order:</string>
+    <string name="nl_1_title">Law #1: Inertia</string>
+    <string name="nl_2_title">Law #2: <i>F = ma</i></string>
+    <string name="nl_3_title">Law #3: \"Equal and Opposite Reaction\"</string>
+    <string name="nl_1_explanation">\tYou\'ve probably heard the word \"inertia\" before! It\'s a really odd-sounding word, but the concept behind it is easy to understand. In a nutshell, Law #1 says that <b>objects at rest tend to stay at rest, and objects that are moving tend to stay moving, unless an outside force acts upon the object</b>. That might sound confusing, so let\'s think of an example. If you have a rock - just sitting on the ground - it\'ll stay there, since there isn\'t a force acting upon it. But what if you kick it? Well, assuming you can kick it with enough force to actually move it (let\'s say it\'s a small rock), it\'ll stop resting since a force (your foot hitting it) acted upon it!\n\n\tThis goes the other way too. The rock you just kicked moves through the air until what? Until it hits something. Whether this something is the ground or a tree doesn\'t matter - the force of the rock hitting the object makes the rock eventually stop being in motion.</string>
+    <string name="nl_2_explanation">\tLaw #2 looks a lot like an equation! That\'s because, really, it is. Law #2 says that the <u>sum of the forces acting on an object</u> (F) is equal to the <u>object\'s mass</u> multiplied by its <u>acceleration.</u>\n\n\tWhat is a <b>force</b>? The short definition is that a force is something that causes an object\'s motion to change. Feel free to read up on the <u>Forces</u> lesson below this one in the Main Menu for more information.</string>
+    <string name="nl_3_explanation">\tLast but not least, the third law! Law #3 looks confusing, but it really isn\'t. It says that, for every action, there is an equal and opposite reaction. This might not make sense, so think of it this way: when you push against a brick wall, what\'s pushing you away from the wall? What is preventing you from sliding through the wall? The answer is a force exactly equal to the one you\'re forcing on the wall.</string>
+    <string name="title_activity_mass_weight">M-Physics</string>
+    <string name="mw_titletext">Mass vs. Weight</string>
+    <string name="mw_explanation">\tYou\'ve probably heard the terms <u>mass</u> and <u>weight</u> used to mean the same thing. However, in physics, <b>the two terms mean different things!</b></string>
+    <string name="mw_mass_explanation">\t<b>Mass</b> is a measurement of how much matter is in an object. Think of it like this: if you\'re making a snowball, the mass of the snowball is how much snow is in the snowball. It doesn\'t matter how big the snowball is or how heavy it is - it just matters how much stuff is in the object.</string>
+    <string name="mw_weight_explanation">\t<b>Weight</b>, on the other hand, measures the force of gravity on an object - how much an object is acted upon by gravity. The thing that really makes mass and weight different is that <b>mass is constant, while weight changes based on gravity</b>. The moon has less gravity than Earth does - so an object would weigh less on the moon than it would on Earth. However, the object\'s mass would be the same in both places!\n\n\tThe weight of an object is equal to its mass multiplied by the acceleration caused by gravity. This is represented by the formula <i>W = mg</i>, where <i>W</i> is weight, <i>m</i> is the mass of the object, and <i>g</i> is the <i>acceleration due to gravity.</i></string>
+    <string name="mw_weight_explanation_2">\tWell, what is <i>g</i>? On Earth, gravity causes all objects to <u>accelerate</u> at a rate of about 9.8 meters per second per second (<i>m/s<sup>2</sup></i>). So, for most problems in physics, you would get the weight of an object on Earth by multiplying its mass (in kilograms) by <i>9.8</i>.\n\n\t(If you don\'t know what any of the units used here mean or why they are used here, check out the lesson on <u>Units</u> in the Main Menu!)</string>
+    <string name="UnitsButton">Units</string>
+    <string name="title_activity_units">M-Physics</string>
+    <string name="units_titletext">Units</string>
+    <string name="units_explanation">\tWhat is a <u>unit</u>? A unit is used to make measurements make sense.\n\n\tLet\'s say you decide to measure how tall you are. You can\'t just say that you\'re \"5\" - you need to know what unit you used to get this measurement! Are you 5 meters? Probably not, because the tallest person ever (Robert Wadlow) was only 2.72 meters. 5 inches? 5 feet? 5 yards?</string>
+    <string name="units_explanation_2">\tFor every measurement, you need to have some sort of way to compare it to other measurements. This is why using units is so helpful - if you measure yourself as being 5 feet tall, you know how tall you are as compared to other people.</string>
+    <string name="units_si_title">SI Units</string>
+    <string name="units_si_explanation">\tBut wait! Which units should you use? The SI (\"International System\") Units are a group of units that most countries have agreed to use. Physics uses these units most of the time, so knowing the ones you\'ll see often is important! The most common SI units you\'ll see in physics are:</string>
+    <string name="units_si_list">Meter (m) for distance\nSecond (s) for time\nKilogram (kg) for mass\nNewton (N) for force</string>
+    <string name="units_si_derivations">\tIf you don\'t recognize some of these, don\'t worry! They\'ll be discussed later in other units when they come up.\n\n\tYou should also know that these units can be combined in certain ways to form new units - for example, since velocity is distance over time, the SI unit for velocity is meter over second, or <i>m/s</i>.\n\tAnd since acceleration is velocity over time, the SI unit for acceleration is meters over seconds over seconds, or <i>m/s/s</i>, or <i>m/s<sup>2</sup></i>.\n\tUnits are combined like this all throughout physics. If you can keep track of units throughout a problem, you\'ll help yourself a lot!\n\n\t(If you don\'t know what the words velocity and/or acceleration mean, check out the lesson on <u>Motion Terms</u> in Kinematics!)</string>
+    <string name="AccelerometerTestButton">Accelerometer Test</string>
+    <string name="accelerometer_test_overview">\tThe phone you\'re using to read this has a neat device in it called an <u>accelerometer</u>. An accelerometer measures the acceleration due to gravity exerted on the phone. Click the button below to view an interactive demonstration of the accelerometer! Tilt the phone to move a stick figure around the screen. Tap the screen to reset the figure\'s position.</string>
+    <string name="title_activity_accelerometer_test">M-Physics</string>
+    <string name="accelerometer_test_x_accel">x-accel =</string>
+    <string name="accelerometer_test_y_accel">y-accel =</string>
+    <string name="accelerometer_test_z_accel">z-accel =</string>
+    <string name="title_activity_wep">M-Physics</string>
+    <string name="wep_titletext">Work, Energy, and Power</string>
+    <string name="wep_intro">\tThe words <u>work</u>, <u>energy</u>, and <u>power</u> might seem pretty odd at first glance. However, they\'re actually pretty simple to understand!</string>
+    <string name="work_title">Work</string>
+    <string name="energy_title">Energy</string>
+    <string name="power_title">Power</string>
+    <string name="energy_explanation">\t<b>Energy</b> measures how much work you can do. It\'s pretty closely related to work - like work, energy is measured in Joules (J) also. Energy is pretty unique, though - it comes in a lot of \"forms\". The most common ones you\'ll probably see are <u>kinetic energy</u> and <u>potential energy</u>. Click the top button below to learn about the different types of energy, and click the bottom button below to learn more about energy in general.</string>
+    <string name="work_explanation">\t<b>Work</b> is done when a force causes an object to move a certain distance. The formula for work is <i>W = Fd</i>, where <i>W</i> is the work done, <i>F</i> is the force causing the work, and <i>d</i> is the distance the object moves because of the force. So if you push a box 3 meters across the ground with a force of 10 Newtons, you will do 30 <i>Joules</i> of work. The SI unit for work is the <u>joule</u> (abbreviated as <i>J</i>).</string>
+    <string name="power_explanation">\t<b>Power</b> is really simple! It might sound intimidating, but it isn\'t. It is defined as the amount of work done over time. The mathematical formula for this is <i>P = W/t</i>. So, if you push a box 3 meters across the ground with a force of 10 Newtons and do it in 5 seconds, the power exerted is (10*3)/5 = 30/5 = 6 Watts. (The SI unit for power is the <i>Watt</i>, abbreviated <i>W</i>.)</string>
+    <string name="TypesOfEnergyButton">Types of Energy</string>
+    <string name="title_activity_energy">M-Physics</string>
+    <string name="types_energy_titletext">Types of Energy</string>
+    <string name="types_energy_intro">\tEnergy is a pretty weird concept. We still really don\'t know what energy is! We do, however, know a lot more about energy now than we used to. Energy comes in a bunch of different forms - the ones we\'ll discuss here are Kinetic and Potential Energy. Click the buttons below to learn more about each type of energy!</string>
+    <string name="types_energy_kinetictitle"><b>Kinetic Energy</b></string>
+    <string name="types_energy_potentialtitle"><b>Potential Energy</b></string>
+    <string name="title_activity_types_of_energy">M-Physics</string>
+    <string name="misc_energy_titletext">More About Energy</string>
+    <string name="misc_energy_intro">\tThere\'s a lot of odd facts about energy that are nice to know. This page covers some of the most common ones you\'re likely to run into in physics class!</string>
+    <string name="MiscEnergyButton">More About Energy</string>
+    <string name="KineticEnergyButton">Kinetic Energy</string>
+    <string name="PotentialEnergyButton">Potential Energy</string>
+    <string name="title_activity_kinetic_energy">M-Physics</string>
+    <string name="title_activity_potential_energy">M-Physics</string>
+    <string name="pe_titletext">Potential Energy</string>
+    <string name="pe_intro">\tPotential Energy is energy that is being \"stored\". Think of it as being like food: if you\'re keeping a sandwich in your pocket to eat later, it\'s still food, even if you aren\'t using it for anything yet! Potential Energy is the same idea, but with &#8230;energy, not sandwiches. There are two common types of potential energy you\'ll learn about in most physics classes: <u>Gravitational Potential Energy</u> and <u>Elastic Potential Energy</u>. Potential Energy is often abbreviated as either <i>PE</i> or <i>U</i>.</string>
+    <string name="pe_grav_title">Gravitational Potential Energy</string>
+    <string name="pe_grav_desc">\tDon\'t be scared away by the name! <b>Gravitational Potential Energy</b> is a really simple concept. It\'s a type of potential energy that an object gets from being off the ground. Since the object isn\'t on the ground, it\'s going to want to fall towards the ground because of gravity. That\'s what Gravitational Potential Energy is! It\'s as simple as that.\n\tGravitational Potential Energy is often abbreviated as <i>U<sub>g</sub></i> - that\'s \"U\" with a subscript of \"g\". The formula for Gravitational Potential Energy is <i>U<sub>g</sub> = mgh</i>, where <i>m</i> is the mass of the object, <i>g</i> is acceleration due to gravity (9.8 <i>m/s<sup>2</sup></i>), and <i>h</i> is the height of the object off the ground.</string>
+    <string name="pe_elastic_title">Elastic Potential Energy</string>
+    <string name="pe_elastic_desc">\t<b>Elastic Potential Energy</b> is potential energy that you get from pushing down on a spring. Elastic Potential Energy is abbreviated <i>U<sub>k</sub></i>. The formula for Elastic Potential Energy is <i>U<sub>k</sub> = kx</i>.</string>
+    <string name="ke_titletext">Kinetic Energy</string>
+    <string name="ke_intro">\tKinetic Energy is energy that comes from an object moving. It\'s as simple as that! Kinetic Energy is often abbreviated <i>KE</i>. There are two main types of kinetic energy you\'ll see in physics: <u>Translational Kinetic Energy</u> and <u>Rotational Kinetic Energy</u>. If you don\'t know what either of these terms mean yet, just read the section on Translational Kinetic Energy for now. The second type, Rotational Kinetic Energy, is something that you\'ll come back to later when you learn about Angular Kinematics. (If you want, you can check out the unit on Angular Kinematics and come back to look at Rotational Kinetic Energy!)</string>
+    <string name="ke_trans_title">Translational Kinetic Energy</string>
+    <string name="ke_rot_title">Rotational Kinetic Energy</string>
+    <string name="ke_trans_desc">\t<b>Translational Kinetic Energy</b> is energy that comes from an object actually moving by changing position. It\'s the type of Kinetic Energy you\'ll probably go over first, before Rotational Kinetic Energy. The formula for Translational Kinetic Energy is <i>KE<sub>trans</sub> = &#189;mv<sup>2</sup></i>, where <i>m</i> is the mass of the object and <i>v</i> is the object\'s velocity.</string>
+    <string name="ke_rot_desc">\t<b>Rotational Kinetic Energy</b> is energy that comes from an object rotating. Again, if you haven\'t gone over <u>Angular Kinematics</u> yet, this probably won\'t make any sense - don\'t worry! You\'re free to skip it.\n\tThe formula for Rotational Kinetic Energy is <i>KE<sub>rotational</sub> = &#189;I&#969;<sup>2</sup></i>, where <i>I</i> is the moment of inertia of the object and <i>&#969;</i> is the angular velocity of the object.</string>
+    <string name="misc_energy_law_titletext">Law of Conservation of Energy</string>
+    <string name="misc_energy_law_desc">\tThe <b>Law of Conservation of Energy</b> says that energy cannot be created or destroyed, and that it can only change forms. What this means is that you can\'t make energy; you can only <u>convert</u> energy from one form to another, for example from potential to kinetic energy (or vice-versa).\n\tThis law is very useful in solving physics problems because it lets you compare certain types of energy before and after and see the exact changes in each type.</string>
+    <string name="misc_energy_negative_titletext">Can Energy be Negative?</string>
+    <string name="misc_energy_negative_desc">\tThe short answer is: no. Energy is a <u>scalar</u>, which means that it doesn\'t have a direction - so you can\'t end up with negative energy. Remember the difference between speed and velocity? Velocity has a direction, so it\'s a vector and can be negative - speed, however, doesn\'t have a direction, so it must be positive. Energy is sort of like speed in this way!</string>
+    <string name="title_activity_settings">M-Physics Settings</string>
+    <string name="pref_mathlevel_sum">The highest level of math education you\'ve completed. If the highest level you\'ve completed isn\'t listed, pick the closest one. This data is used to adjust the depth to which certain explantions go.</string>
+    <string name="pref_mathlevel_title">Mathematics Level</string>
+    <string name="pref_age_sum">Your age, in years. This data is used to adjust the vocabulary level used.</string>
+    <string name="pref_age_title">Age</string>
+    <string name="title_activity_settings_explanation">M-Physics</string>
+    <string name="se_titletext">Settings Information</string>
+    <string name="se_intro">\tIf you haven\'t already, please go to the settings page for this application, located in the app\'s options menu. (If you can\'t find it there, a button to it is located near the bottom of the main menu.) There you can set your age and math level in order to learn at a pace best suited to you.\n\n\tWhat you put in the settings page doesn\'t have to be correct - if you want to see in-depth math explanations going up to calculus, feel free to check \"Calculus\" even if you haven\'t completed a course in calculus before. The same goes with age. The point of these options is to help tailor the app to \"fit\" as many people as possible.\n\tMore information about these settings can be found below.</string>
+    <string name="se_age_title">Age</string>
+    <string name="se_age_explanation">\tYour age is used to change the level of vocabulary used in the application. Until around the age of 13, most children experience relatively fast vocabulary growth, and after around 13, this growth starts to level off. Because of this, it\'s important to adjust vocabulary level for people under the age of 13, but less important afterwards. The lower limit for age selectable is \"less than 5\" because before this age, there\'s far too much variance to really make any consistently useful assumptions.</string>
+    <string name="se_math_title">Mathematics Level</string>
+    <string name="se_math_explanation">\tThe highest level of mathematics you\'ve completed probably makes more sense for being used than age, at least. It\'s used to adjust how in-depth some explanations go mathematically. You\'ll still be exposed to the same content regardless of level, but certain explanations might be more advanced or more thorough for someone who has finished a higher level of mathematics education than you so far.\n\n\tThe reason mathematics level is asked for explicitly instead of just using age is that mathematical ability varies a lot more widely than vocabulary level among ages. There\'s a lot of interesting research on this - there\'ve been studies about a trait called an <u>Approximate Number System (ANS)</u> that supposedly influences, regardless of age, how certain people learn mathematics. You can research this to find more in-depth information on the subject.\n\n\tAlso, the mathematics curriculum is fairly standardized by this point, allowing people to reliably self-report on their current mathematical level. The same cannot be said for vocabulary, for obvious reasons.</string>
+    <string name="SettingsExplanationButton">Information about Settings</string>
+    <string name="title_activity_forces">M-Physics</string>
+    <string name="forces_titletext">Forces</string>
+    <string name="forces_explanation">\tA <b>force</b> is something that causes an object\'s motion to change. Forces are a really important concept in physics, and knowing how to analyze them will help a lot. The SI unit used to measure force is the Newton (N).</string>
+    <string name="ForcesButton">Forces</string>
+    <string name="forces_fbd_title">Free Body Diagrams</string>
+    <string name="forces_fbd_explanation">\t<b>Free Body Diagrams</b> are a way to help analyze the forces in a situation. They\'re a type of diagram that involves showing visually how forces work in a problem. To show how they work, we\'ll do an example problem here.\n\n\tLet\'s say you\'ve got a block hanging off of a table. The block has a mass of <i>m</i> and the cord between the block and the table has a <u>negligible mass</u>. Let\'s say we want to find the <u>tension</u> in the cord. This situation is pictured below:</string>
+    <string name="forces_fbd_explanation2">\tWhat does \"negligible mass\" mean? It means we should ignore any added mass from the cord and only focus on the <b>tension</b> in the cord. (Tension is a type of force that comes from a cord, rope, etc. pulling something.) Most physics problems involving cords, ropes, or anything like that will say that they have negligible mass. It might not make sense <i>why</i> this is necessary or helpful, but it simplifies things a lot for us.</string>
+    <string name="forces_fbd_explanation3">\tNow we can get down to actually solving the problem. To simplify things, let\'s draw a free-body diagram to show all the forces in the <u>system</u>. (The word \"system\" is used here to describe all the objects, forces, etc. in the problem.)</string>
+    <string name="forces_fbd_explanation4">\tIt\'s as simple as that! To draw a free-body diagram for any object, you just draw lines showing the directions of each force acting upon the object. You should label each line to show what force it represents and (if you know it) the value of the force. (So, for example, we\'d label the weight of the block in this diagram as being equal to the mass of the block times gravity.)\n\n\tAfter looking at this, we can see that the only two forces <u>acting upon</u> the block are the tension from the cord that is keeping the block attached to the table, and the weight of the block that is directed towards the ground. Now comes the really important part: <b>since the two forces in this problem are on the same axis, we can add them together.</b> Remember Newton\'s Second Law? It said that the total forces on an object are equal to its mass multiplied by its acceleration. Well, we can break this up into multiple directions: the total forces in the y-direction acting upon an object are equal to the object\'s mass multiplied by it\'s acceleration <u>in the y-direction.</u> Mathematically, we can write this as:</string>
+    <string name="forces_fbd_equations"><i>&#931;F<sub>y</sub> = ma<sub>y</sub></i>\n</string>
+    <string name="forces_fbd_explanation5">\tWhat this says is that the net forces in the y-axis (the symbol &#931; is called a sigma, and represents that we\'re looking at the <u>net force</u>) are equal to the mass of the object multiplied by its vertical acceleration. (The <i>y</i> as a subscript shows that whatever it comes after is only for the vertical axis.) So, basically, Newton\'s Second Law, just changed a little to fit the problem. Neat, huh?\n\tFinally, let\'s substitute in the actual forces for <i>&#931;F<sub>y</sub></i>.</string>
+    <string name="forces_fbd_equations2"><i>T - mg = ma<sub>y</sub></i>\n<i>T = mg + ma<sub>y</sub></i>\n</string>
+    <string name="forces_fbd_explanation6">\tIn our coordinate system, let\'s assume that up is positive and down is negative. For every problem where you use a coordinate system, you\'re going to want to keep the directions consistent.\n\tWell, now we know the exact tension in the cord! It\'s equal to <i>mg + ma<sub>y</sub></i>. It might be odd to have an answer with no numbers (except for <i>g</i>, which is equal to 9.8 <i>m/s<sup>2</sup></i>), but it\'s actually pretty common to have an answer filled with variables in physics. You could have a problem with given values for mass or whatever, though - you\'d solve it exactly the same way!</string>
+    <string name="ProjectileMotionButton">Projectile Motion</string>
+    <string name="projectile_motion_overview">\tOne topic that comes up fairly often in physics classes is <u>projectile motion</u>. It\'s a lot more easier than it sounds! Projectile Motion problems involve objects moving through the air. If this sounds really simple, that\'s because it is. Check out the button below to view a lesson on projectile motion with interactive activities! It\'s recommended that you view the lesson on <u>Kinematic Equations</u> before reading this lesson.</string>
+    <string name="title_activity_projectile_motion">M-Physics</string>
+    <string name="projmot_titletext">Projectile Motion</string>
+    <string name="projmot_explanation">\t<b>Projectile Motion</b> is a topic in physics that involves, well, the motion of projectiles. But wait! What\'s a projectile? A <b>projectile</b> is an object that is launched through the air. This is a really fun unit - where else in school would you get to study cannonballs? (Aside from Medieval History, maybe.)\n\n\tClick the first button below to see an explanation of how to solve projectile motion problems. Click the second button below to try an interactive activity with launching projectiles!</string>
+    <string name="projmot_problems_title">Solving Projectile Motion Problems</string>
+    <string name="projmot_problems_exp1">\tSo what will a projectile motion problem ask you? There\'s no definite answer to this. It might ask you any number of things. But the <u>techniques</u> you use will be the same, regardless of what the answer is!\n\n\tLet\'s do an example problem together. The following is what a projectile motion problem in a physics class might look like:</string>
+    <string name="projmot_exampleproblem"><i>A ball rolls off of a horizontal desk with a velocity of 5 m/s at time t = 0. The top of the desk is 3 meters above the ground. When will the ball hit the ground?</i></string>
+    <string name="projmot_exprob1">\tThe first thing you should do is make sure you have a clear picture of the problem in your head. Being able to know what a problem looks like will help you a lot in solving it. So let\'s draw a picture of the situation:</string>
+    <string name="projmot_exprob2">\tThe problem now looks easier to understand. Now that we know what it looks like, let\'s get to solving it.\n\tRemember the Kinematic Equations? Those are going to be useful here. Let\'s look at the velocity of the ball right before it leaves the table. It\'s moving 5 m/s, sure - but it\'s moving 5 m/s <u>horizontally</u>. This is very important: for almost every projectile motion problem, you need to separate the <u>components</u> of the projectile\'s velocity.</string>
+    <string name="projmot_eqs1"><i>v<sub>ix</sub> = 5</i>\n<i>v<sub>iy</sub> = 0</i>\n</string>
+    <string name="projmot_eqs1exp">\tThe first equation here says that the initial <u>horizontal</u> velocity of the ball is equal to 5 m/s and the initial <u>vertical</u> velocity is equal to 0 m/s. This should make sense - if the ball\'s rolling on a flat table, it\'s not moving up or down.\n\tNow, let\'s look at the equation we\'re going to use to solve this.</string>
+    <string name="projmot_kineq1"><i>d<sub>y</sub> = v<sub>iy</sub>t + &#189;a<sub>y</sub>t<sup>2</sup></i>\n</string>
+    <string name="projmot_kineq1exp">\tThis is just the kinematic equation <i>d = v<sub>i</sub>t + &#189;at<sup>2</sup></i> changed to apply to just the vertical movement of the ball. We already know a lot of what we\'re going to be putting in this equation:</string>
+    <string name="projmot_eqs2"><i>d<sub>y</sub> = 3</i>\n<i>a<sub>y</sub> = g = 9.8</i>\n</string>
+    <string name="projmot_accelduetograv_exp">\tThe vertical acceleration is equal to just the acceleration due to gravity, 9.8 m/s. But why is this positive? Since <i>g</i> is causing the ball to accelerate downwards, shouldn\'t it be negative?\n\n\tThe answer is that it doesn\'t really matter. In all physics problems, <u>you</u> are in control of setting the coordinate system, and all the signs of the vectors have to be consistent. Remember that we\'re considering vertical distance also - since that is positive and downward, we have to treat vertical acceleration the same. If we considered <i>d<sub>y</sub></i> to be negative, we\'d count <i>a<sub>y</sub></i> as negative also. You\'d get the same answers either way!\n\n\tLet\'s plug everything into the kinematic equation we decided upon:</string>
+    <string name="projmot_eqs3"><i>(3) = (0)t + &#189;(9.8)(t<sup><small>2</small></sup>)</i>\n\n<i>3 = 4.9t<sup><small>2</small></sup></i>\n\n<i>0.612 = t<sup><small>2</small></sup></i>\n\n<i>t = 0.78 sec</i>\n</string>
+    <string name="projmot_finalexplanation">\tThere. After you figure all the variables out, you can plug all of them in and get an answer! We know now that it takes the ball 0.78 seconds to hit the ground after rolling off of the table.\n\tOne thing you might be confused about is how we get t = 0.78. Since we take a square root, shouldn\'t t really be <i>&#177; 0.78</i>?\n\tThis isn\'t exactly true. Yes, the math shows that t should be both +0.78 and -0.78, but since time cannot be negative, you <u>ignore negative values for <i>t</i></u>.\n\n\tSome physics problems with projectile motion might ask you to find other values aside from time - the most common one of these is solving for how far the ball moves horizontally. Let\'s do this now with the desk problem. We know <i>t</i>, so let\'s use the kinematic equation we used before, but with the x-direction this time:</string>
+    <string name="projmot_eqs4"><i>d<sub>x</sub> = v<sub>x</sub>t + &#189;a<sub>x</sub>t<sup>2</sup></i>\n</string>
+    <string name="projmot_eqs4_exp">\tIt\'s the same as the other one, but it\'s dealing with the horizontal motion of the projectile. We\'re solving for <i>d<sub><small>x</small></sub></i>, the horizontal distance moved by the projectile before hitting the ground. We solve this equation the same as with the other one - plug everything in:</string>
+    <string name="projmot_eqs5"><i>d<sub><small>x</small></sub> = (5)(0.78) + &#189;(0)(0.78)<sup>2</sup></i>\n<i>d<sub><small>x</small></sub> = (5)(0.78)</i>\n<i>d<sub><small>x</small></sub> = 3.9 meters</i>\n</string>
+    <string name="projmot_expreallyfinal">\tThere you have it! The ball travels 3.9 meters horizontally before it hits the ground.</string>
+    <string name="title_activity_projectile_motion_problem">M-Physics</string>
+    <string name="ProjectileMotionProblemButton">Solving Projectile Motion\n Problems</string>
+    <string name="title_activity_cannon">M-Physics</string>
+    <string name="CannonButton">Cannon Activity</string>
+    <string name="ImageErrorMsg">ERROR: Image cannot be found.</string>
+    <string name="cannon_initialvelocity_desc">Initial Velocity (<i>m/s</i>):</string>
+    <string name="cannon_angle_desc">Cannon Angle (<i>degrees</i>):</string>
+    <string name="CannonStartButton">Go!</string>
+    <string name="cannon_angle_et_def">45</string>
+    <string name="cannon_initialvelocity_et_def">10</string>
+    <string name="cannon_t">Elapsed time:</string>
+    <string name="cannon_dy">Vertical Distance to peak of path:</string>
+    <string name="cannon_dx">Horizontal Distance traveled:</string>
+    <string name="cannon_verteq"><i>y = </i></string>
+    <string name="cannon_horzeq"><i>x = </i></string>
+    <string name="cannon_velocity_text">Initial Velocity: </string>
+    <string name="cannon_angle_text">Launch Angle: </string>
+    <string name="CannonClearButton">Clear</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_credits">M-Physics</string>
+	<string name="credits_titletext">Credits/Acknowledgments</string>
+	<string name="credits_author_title">About the Creator</string>
+	<string name="credits_author">\t<b>M-Physics</b> was designed, written, programmed, and drawn by Marcus Fedarko. Marcus is (as of now) a junior at Long Reach High School in Columbia, Maryland. He hopes you will enjoy using M-Physics and - hopefully - learn some neat things about physics!</string>
+	<string name="credits_acknowledgments_title">Acknowledgments</string>
+	<string name="credits_acknowledgments">\tThanks to Mrs. Diane McAllister for helping facilitate a crazy busy (but fun) two years of Independent Research and providing input on this project!\n\n\tThanks to Mrs. Sue Chase for mentoring this project and teaching my physics class!</string>
+	<string name="CreditsButton">Credits</string>
+	<color name="divider_gray">#777777</color>
+	<string name="SettingsButton">Settings</string>
+</resources>

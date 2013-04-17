@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<resources>
+    <string-array name="pref_mathlevel_entries">
+        <item>Don\'t know</item>
+        <item>Earlier than Arithmetic</item>
+        <item>Arithmetic (+, -, &#215;, &#247;)</item>
+        <item>Middle School Math</item>
+        <item>Pre-Algebra</item>
+        <item>Algebra I</item>
+        <item>Geometry</item>
+        <item>Algebra II</item>
+        <item>Pre-Calculus</item>
+        <item>Calculus or Above</item>
+    </string-array>
+    
+    <string-array name="pref_mathlevel_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>    
+
+    <string-array name="pref_age_entries">
+        <item>7 or less</item>
+        <item>8 &#8211; 9</item>
+        <item>10 &#8211; 12</item>
+        <item>13 or above</item>
+    </string-array>
+    
+    <string-array name="pref_age_values">
+        <item>7</item>
+        <item>8</item>   
+        <item>10</item>
+        <item>13</item>
+    </string-array>        
+    
+</resources>

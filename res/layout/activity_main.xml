@@ -1,0 +1,157 @@
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView
+	        android:id="@+id/title_question"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="35dp"
+	        android:text="@string/title_question"
+	        tools:context=".MainActivity" />
+	
+	    <Button
+	        android:id="@+id/WhatButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/title_question"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/WhatButton"
+	        android:onClick="goToWhatScreen" />
+	    
+	    <Button
+	        android:id="@+id/WhereButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/WhatButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/WhereButton"
+	        android:onClick="goToWhereScreen" />  
+	    
+	    <Button
+	        android:id="@+id/SettingsExplanationButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/WhereButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/SettingsExplanationButton"
+	        android:onClick="goToSettingsExplanationScreen" /> 
+	          
+	    <Button
+	        android:id="@+id/UnitsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/SettingsExplanationButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/UnitsButton"
+	        android:onClick="goToUnitsScreen" />	
+	        
+	    <Button
+	        android:id="@+id/MassWeightButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/UnitsButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/MassWeightButton"
+	        android:onClick="goToMassWeightScreen" />	    
+	    	        
+	    <Button
+	        android:id="@+id/KinematicsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/MassWeightButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/KinematicsButton"
+	        android:onClick="goToKinematicsScreen" />   	    
+	    
+	    <Button
+	        android:id="@+id/NewtonsLawsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/KinematicsButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/NewtonsLawsButton"
+	        android:onClick="goToNLScreen" />  	    
+
+	    <Button
+	        android:id="@+id/ForcesButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/NewtonsLawsButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/ForcesButton"
+	        android:onClick="goToForcesScreen" /> 
+	        	
+	    <Button
+	        android:id="@+id/WEPButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ForcesButton"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/WEPButton"
+	        android:onClick="goToWEPScreen" />    
+
+		<View
+		    android:id="@+id/DividerBar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"
+		    android:layout_below="@+id/WEPButton"
+		    android:background="@color/divider_gray"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginBottom="10dp" />	   
+	    	        	
+	    <Button
+	        android:id="@+id/SettingsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/DividerBar"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/SettingsButton"
+	        android:onClick="goToSettingsScreen" />      
+	    	        	
+	    <Button
+	        android:id="@+id/CreditsButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/SettingsButton"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/CreditsButton"
+	        android:onClick="goToCreditsScreen" /> 	 
+	    	    	    	    
+	</RelativeLayout>
+</ScrollView>

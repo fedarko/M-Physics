@@ -1,0 +1,144 @@
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView
+	        android:id="@+id/forces_titletext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_titletext"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/forces_explanation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_titletext"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_explanation" />  
+
+	    <TextView
+	        android:id="@+id/forces_fbd_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_explanation"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/forces_fbd_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <TextView
+	        android:id="@+id/forces_fbd_explanation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_title"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_explanation" />    
+
+	    <ImageView
+	        android:id="@+id/forces_fbd_blocksystem_diagram"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_explanation"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/forces_fbd_blocksystem"
+	        android:contentDescription="@string/ImageErrorMsg" />
+	    	   	    
+	    <TextView
+	        android:id="@+id/forces_fbd_explanation2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_blocksystem_diagram"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_explanation2" />   
+	         
+	    <TextView
+	        android:id="@+id/forces_fbd_explanation3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_explanation2"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_explanation3" />    
+
+	    <ImageView
+	        android:id="@+id/forces_fbd_block_diagram"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_explanation3"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/forces_fbd_block"
+	        android:contentDescription="@string/ImageErrorMsg" />
+	         
+	    <TextView
+	        android:id="@+id/forces_fbd_explanation4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_block_diagram"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_explanation4" />  
+	         
+	    <TextView
+	        android:id="@+id/forces_fbd_equations"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_explanation4"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_equations" />
+	         
+	    <TextView
+	        android:id="@+id/forces_fbd_explanation5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_equations"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_explanation5" />  	  
+	         
+	    <TextView
+	        android:id="@+id/forces_fbd_equations2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_explanation5"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_equations2" />  	 
+	         
+	    <TextView
+	        android:id="@+id/forces_fbd_explanation6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/forces_fbd_equations2"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/forces_fbd_explanation6" />  		        
+	    	    	          	    	    	    	        
+	</RelativeLayout>
+</ScrollView>

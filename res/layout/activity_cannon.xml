@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cannon_activity_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/cannon_sprite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/ImageErrorMsg"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/cannon_sprite" />
+    
+    <EditText
+        android:id="@+id/cannon_initialvelocity_et"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/cannon_initialvelocity_et_def" >
+
+        <requestFocus />
+    </EditText>
+    
+	<TextView
+	    android:id="@+id/cannon_initialvelocity_desc"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/cannon_initialvelocity_et"
+	    android:layout_toLeftOf="@+id/cannon_initialvelocity_et"
+	    android:text="@string/cannon_initialvelocity_desc" />
+	      
+    <EditText
+        android:id="@+id/cannon_angle_et"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cannon_initialvelocity_et"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/cannon_angle_et_def" >
+    </EditText>
+    
+	<TextView
+	    android:id="@+id/cannon_angle_desc"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/cannon_angle_et"
+	    android:layout_toLeftOf="@id/cannon_angle_et"
+	    android:text="@string/cannon_angle_desc" />
+	
+	<Button
+	    android:id="@+id/CannonStartButton"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:text="@string/CannonStartButton"
+	    android:onClick="shootCannon" />
+	
+	<Button
+	    android:id="@+id/CannonClearButton"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/CannonStartButton"
+	    android:text="@string/CannonClearButton"
+	    android:onClick="clearPaths" />
+
+	<TextView
+	    android:id="@+id/cannon_velocity_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dp"
+	    android:layout_below="@+id/cannon_angle_et"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/cannon_velocity_text" />	
+	
+	<TextView
+	    android:id="@+id/cannon_angle_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/cannon_velocity_text"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/cannon_angle_text" />
+		
+	<TextView
+	    android:id="@+id/cannon_t"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/cannon_angle_text"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/cannon_t" />
+
+	<TextView
+	    android:id="@+id/cannon_dx"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/cannon_t"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/cannon_dx" />
+
+	<TextView
+	    android:id="@+id/cannon_dy"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/cannon_dx"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/cannon_dy" />
+	
+	<TextView
+	    android:id="@+id/cannon_verteq"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/cannon_dy"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/cannon_verteq" />	
+	
+	<TextView
+	    android:id="@+id/cannon_horzeq"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/cannon_verteq"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/cannon_horzeq" />	
+</RelativeLayout>

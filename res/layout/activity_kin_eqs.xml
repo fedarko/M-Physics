@@ -1,0 +1,82 @@
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+	    <TextView
+	        android:id="@+id/kinematics_eqstitletext"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/kineqs_title"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <TextView
+	        android:id="@+id/kinematics_explanationText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/kinematics_eqstitletext"
+	        android:layout_marginTop="15dp"
+	        android:text="@string/kineqs_explanation" />
+	
+	    <TextView
+	        android:id="@+id/kinematics_variableList"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/kinematics_explanationText"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:text="@string/kineqs_variableList" />
+	
+	    <TextView
+	        android:id="@+id/kinematics_equationExplanation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/kinematics_variableList"
+	        android:text="@string/kineqs_equationExplanation" />
+	    
+		<TextView
+	        android:id="@+id/kinematics_equationList"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/kinematics_equationExplanation"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginLeft="5dp"
+	        android:text="@string/kineqs_equationList" />
+	    
+		<TextView
+		    android:id="@+id/kinematics_equationElaboration"
+			android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/kinematics_equationList"
+	        android:text="@string/kineqs_equationElaboration" />
+	
+	</RelativeLayout>
+</ScrollView>
