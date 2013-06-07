@@ -1,0 +1,289 @@
+<!--  Copyright 2013 Marcus Fedarko
+Contact Email: marcus.fedarko@gmail.com
+
+This file is part of M-Physics.
+ 
+     M-Physics is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  M-Physics is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with M-Physics.  If not, see <http://www.gnu.org/licenses/>. -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	
+		    <TextView
+		        android:id="@+id/angproj_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_title"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+		    <TextView
+		        android:id="@+id/angproj_intro"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_title"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_intro" />			    		
+
+		    <ImageView
+		        android:id="@+id/angproj_drawing"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_intro"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/angproj_drawing"
+		        android:contentDescription="@string/ImageErrorMsg" />
+		    	
+		    <TextView
+		        android:id="@+id/angproj_prob_intro"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_drawing"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_prob_intro" />   	
+	
+		    <TextView
+		        android:id="@+id/angproj_problem"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_prob_intro"
+				android:layout_marginTop="20dp"
+				android:layout_marginLeft="20dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_problem" />
+		    
+			<TextView
+		        android:id="@+id/angproj_prob_exp1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_problem"
+		        android:layout_marginTop="20dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_prob_exp1" />			    		
+
+		    <ImageView
+		        android:id="@+id/angproj_diagram"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_prob_exp1"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/angproj_diagram"
+		        android:contentDescription="@string/ImageErrorMsg" /> 
+		    
+			<TextView
+		        android:id="@+id/angproj_prob_exp2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_diagram"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_prob_exp2" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_prob_exp3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_prob_exp2"
+		        android:layout_marginTop="20dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_prob_exp3" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_velocitytrig"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_prob_exp3"
+		        android:layout_marginTop="5dp"
+	        	android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_velocitytrig" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_prob_exp4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_velocitytrig"
+		        android:layout_marginTop="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_prob_exp4" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_prob_exp5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_prob_exp4"
+		        android:layout_marginTop="20dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_prob_exp5" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_pluggingin"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_prob_exp5"
+		        android:layout_marginTop="5dp"
+	        	android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_pluggingin" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_prob_exp6"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_pluggingin"
+		        android:layout_marginTop="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_prob_exp6" />	
+		    
+			<TextView
+			    android:id="@+id/angproj_dy1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/angproj_prob_exp6"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="5dp"
+			    android:text="@string/angproj_dy1" />
+		    
+			<TextView
+		        android:id="@+id/angproj_dyexp1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dy1"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dyexp1" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dy2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dyexp1"
+		        android:layout_marginTop="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dy2" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dyexp2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dy2"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dyexp2" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dy3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dyexp2"
+		        android:layout_marginTop="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dy3" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dxintro"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dy3"
+		        android:layout_marginTop="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dxintro" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dxintro"
+		        android:layout_marginTop="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx1" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx1e"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx1"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx1e" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx1e"
+		        android:layout_marginTop="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx2" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx2e"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx2"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx2e" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx2e"
+		        android:layout_marginTop="5dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx3" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx3e"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx3"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx3e" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx3e"
+		        android:layout_marginTop="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx4" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx4e"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx4"
+		        android:layout_marginTop="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx4e" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx4e"
+		        android:layout_marginTop="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx5" />	
+		    
+			<TextView
+		        android:id="@+id/angproj_dx5e"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/angproj_dx5"
+		        android:layout_marginTop="10dp"
+		        android:layout_centerHorizontal="true"
+		        android:text="@string/angproj_dx5e" />												 							
+	</RelativeLayout>
+</ScrollView>

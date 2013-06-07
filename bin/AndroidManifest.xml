@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mfedarko.m_physics"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="3"
+    android:versionName="1.02" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -10,7 +10,7 @@
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Holo" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
@@ -165,6 +165,20 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PMNonAngledLaunchActivity"
+            android:label="@string/title_activity_pmnon_angled_launch" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.m_physics.ProjectileMotionProblemActivity" />
+        </activity>
+        <activity
+            android:name=".AngularProjectilesActivity"
+            android:label="@string/title_activity_angular_projectiles" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.m_physics.ProjectileMotionProblemActivity" />
         </activity>
     </application>
 

@@ -19,8 +19,7 @@ This file is part of M-Physics.
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
+	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content" >
 	

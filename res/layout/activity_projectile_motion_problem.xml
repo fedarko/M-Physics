@@ -19,8 +19,7 @@ This file is part of M-Physics.
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
+	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content" >
 
@@ -35,157 +34,31 @@ This file is part of M-Physics.
 		        android:textAppearance="?android:attr/textAppearanceLarge" />	
 		        	
 		    <TextView
-		        android:id="@+id/projmot_problems_exp1"
+		        android:id="@+id/projmot_problems_diff"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
 		        android:layout_below="@+id/projmot_problems_title"
 		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_problems_exp1" />	   	
-	
-		    <TextView
-		        android:id="@+id/projmot_exampleproblem"
+		        android:text="@string/projmot_problems_diff" />	 		    
+		    
+			<Button
+		        android:id="@+id/HorizontalProjectilesButton"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_problems_exp1"
-				android:layout_marginTop="20dp"
-				android:layout_marginLeft="20dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_exampleproblem" />	   
-	
-		    <TextView
-		        android:id="@+id/projmot_exprob1"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_exampleproblem"
-				android:layout_marginTop="20dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_exprob1" />	   
-	
-		    <ImageView
-		        android:id="@+id/projmot_example_drawing"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_exprob1"
-		        android:layout_centerHorizontal="true"
-		        android:src="@drawable/projmot_example_drawing"
-		        android:contentDescription="@string/ImageErrorMsg" />
-		     
-		    <TextView
-		        android:id="@+id/projmot_exprob2"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_example_drawing"
-				android:layout_marginTop="20dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_exprob2" />	   
-			
-			<TextView
-				android:id="@+id/projmot_eqs1"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_exprob2"
-				android:layout_marginTop="20dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_eqs1" />	   
-				
-			<TextView
-				android:id="@+id/projmot_eqs1exp"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginTop="10dp"
-		        android:layout_below="@+id/projmot_eqs1"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_eqs1exp" />
-				   
-			<TextView
-				android:id="@+id/projmot_kineq1"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/projmot_problems_diff"
 		        android:layout_marginTop="20dp"
-		        android:layout_below="@+id/projmot_eqs1exp"
 		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_kineq1" />	
-		        
-			<TextView
-				android:id="@+id/projmot_kineq1exp"
+		        android:text="@string/HorizontalProjectilesButton"
+		        android:onClick="goToHorizontalProjectilesScreen" />		    
+		    
+			<Button
+		        android:id="@+id/AngularProjectilesButton"
 		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:layout_marginTop="10dp"
-		        android:layout_below="@+id/projmot_kineq1"
+		        android:layout_below="@+id/HorizontalProjectilesButton"
 		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_kineq1exp" />	    
-		            
-			<TextView
-				android:id="@+id/projmot_eqs2"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginTop="20dp"
-		        android:layout_below="@+id/projmot_kineq1exp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_eqs2" /> 
-	
-			<TextView
-				android:id="@+id/projmot_accelduetograv_exp"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_eqs2"
-		        android:layout_marginTop="10dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_accelduetograv_exp" />	
-		            
-			<TextView
-				android:id="@+id/projmot_eqs3"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginTop="20dp"
-		        android:layout_below="@+id/projmot_accelduetograv_exp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_eqs3" /> 	
-	
-			<TextView
-				android:id="@+id/projmot_finalexplanation"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_eqs3"
-		        android:layout_marginTop="10dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_finalexplanation" />		
-		            
-			<TextView
-				android:id="@+id/projmot_eqs4"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginTop="20dp"
-		        android:layout_below="@+id/projmot_finalexplanation"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_eqs4" />
-	
-			<TextView
-				android:id="@+id/projmot_eqs4_exp"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_eqs4"
-		        android:layout_marginTop="10dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_eqs4_exp" />		
-		            
-			<TextView
-				android:id="@+id/projmot_eqs5"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginTop="20dp"
-		        android:layout_below="@+id/projmot_eqs4_exp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_eqs5" /> 
-	
-			<TextView
-				android:id="@+id/projmot_expreallyfinal"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_below="@+id/projmot_eqs5"
-		        android:layout_marginTop="10dp"
-		        android:layout_centerHorizontal="true"
-		        android:text="@string/projmot_expreallyfinal" />		
-						
+		        android:text="@string/AngularProjectilesButton"
+		        android:onClick="goToAngularProjectilesScreen" />		
+		        		
 	</RelativeLayout>
 </ScrollView>

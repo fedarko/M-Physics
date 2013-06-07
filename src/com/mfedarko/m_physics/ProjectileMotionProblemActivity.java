@@ -24,6 +24,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ProjectileMotionProblemActivity extends Activity {
 
@@ -60,4 +61,14 @@ public class ProjectileMotionProblemActivity extends Activity {
     	} 
     }
 
+
+    public void goToHorizontalProjectilesScreen(View view) {
+		Intent i = new Intent(getApplicationContext(), PMNonAngledLaunchActivity.class);
+		startActivity(i);
+	}    
+    
+    public void goToAngularProjectilesScreen(View view) {
+		Intent i = new Intent(getApplicationContext(), AngularProjectilesActivity.class);
+		startActivity(i);    	
+    }
 }

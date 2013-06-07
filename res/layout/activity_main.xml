@@ -20,8 +20,7 @@ This file is part of M-Physics.
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
+	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content" >
 	
@@ -32,8 +31,7 @@ This file is part of M-Physics.
 	        android:layout_alignParentTop="true"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="35dp"
-	        android:text="@string/title_question"
-	        tools:context=".MainActivity" />
+	        android:text="@string/title_question" />
 	
 	    <Button
 	        android:id="@+id/WhatButton"

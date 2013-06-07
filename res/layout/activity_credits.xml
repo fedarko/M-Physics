@@ -19,8 +19,7 @@ This file is part of M-Physics.
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
+	<RelativeLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content" >
 	
@@ -68,6 +67,24 @@ This file is part of M-Physics.
 	        android:layout_below="@+id/credits_acknowledgments_title"
 	        android:layout_centerHorizontal="true"
 	        android:text="@string/credits_acknowledgments" />   
-	        		   		    	    	    	
+
+	    <TextView
+	        android:id="@+id/credits_source_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/credits_acknowledgments"
+	        android:layout_marginTop="20dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/credits_source_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />	
+	    
+	    <TextView
+	        android:id="@+id/credits_source"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/credits_source_title"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/credits_source" /> 
+	    
 	</RelativeLayout>
 </ScrollView>

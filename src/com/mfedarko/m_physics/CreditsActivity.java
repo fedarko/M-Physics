@@ -22,8 +22,10 @@ package com.mfedarko.m_physics;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.text.method.LinkMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 public class CreditsActivity extends Activity {
 
@@ -31,6 +33,10 @@ public class CreditsActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
+        
+        // Make the hyperlinks in the "credits_souce" TextView clickable
+        TextView sourceInfo = (TextView) findViewById(R.id.credits_source);
+        sourceInfo.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     @Override
