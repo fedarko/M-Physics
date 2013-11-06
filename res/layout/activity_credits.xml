@@ -31,14 +31,22 @@ This file is part of M-Physics.
 	        android:layout_centerHorizontal="true"
 	        android:text="@string/credits_titletext"
 	        android:textAppearance="?android:attr/textAppearanceLarge" />
-
+	    
+	    <TextView
+	        android:id="@+id/credits_version"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/credits_titletext"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/credits_version" />
+	    
 	    <TextView
 	        android:id="@+id/credits_author_title"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_marginTop="20dp"
-	        android:layout_below="@+id/credits_titletext"
+	        android:layout_below="@+id/credits_version"
 	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="15dp"
 	        android:text="@string/credits_author_title"
 	        android:textAppearance="?android:attr/textAppearanceMedium" />
 	    

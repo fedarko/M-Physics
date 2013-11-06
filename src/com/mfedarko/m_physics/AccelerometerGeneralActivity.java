@@ -26,40 +26,41 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class WEPActivity extends Activity {
+public class AccelerometerGeneralActivity extends Activity {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wep);
-    }
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_accelerometer_general);
+	}
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_wep, menu);
-        return true;
-    }
-    
-    public void goToTypesOfEnergyScreen(View view) {
-    	Intent i = new Intent(getApplicationContext(), TypesOfEnergyActivity.class);
-    	startActivity(i);   	
-    }
-    
-    public void goToEnergyScreen(View view) {
-    	Intent i = new Intent(getApplicationContext(), EnergyActivity.class);
-    	startActivity(i);     	
-    }
-    
-    public boolean onOptionsItemSelected(MenuItem item) {
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		getMenuInflater().inflate(R.menu.activity_accelerometer_general, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-		    	
-			case R.id.menu_credits:
-				Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);
-				startActivity(i1);
-		    	return true;    	
-		    	
-		    default:
-		    	return super.onOptionsItemSelected(item);
-		}  
+	    	
+		case R.id.menu_credits:
+			Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);
+			startActivity(i1);
+	    	return true;    	
+	    	
+	    default:
+	    	return super.onOptionsItemSelected(item);
+    	} 
+	}
+
+    public void goToAccelTestScreen(View view) {
+    	Intent i = new Intent(getApplicationContext(), AccelerometerTestActivity.class);
+    	startActivity(i);
     }
+    
+    public void goToAccelInfoScreen(View view) {
+    	Intent i = new Intent(getApplicationContext(), AccelerometerInfoActivity.class);
+    	startActivity(i);
+    }	
 }

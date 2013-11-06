@@ -42,11 +42,6 @@ public class MainActivity extends Activity {
     
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-    	
-    		case R.id.menu_settings:
-    			Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-    			startActivity(i);
-    	    	return true;
     	    	
     		case R.id.menu_credits:
     			Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);
@@ -65,11 +60,6 @@ public class MainActivity extends Activity {
     
     public void goToWhereScreen(View view) {
     	Intent i = new Intent(getApplicationContext(), WhereToStartActivity.class);
-    	startActivity(i);
-    }
-
-    public void goToSettingsExplanationScreen(View view) {
-    	Intent i = new Intent(getApplicationContext(), SettingsExplanationActivity.class);
     	startActivity(i);
     }
     
@@ -106,10 +96,5 @@ public class MainActivity extends Activity {
     public void goToCreditsScreen(View view) {
     	Intent i = new Intent(getApplicationContext(), CreditsActivity.class);
     	startActivity(i);
-    }
-    
-    public void goToSettingsScreen(View view) {
-		Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-		startActivity(i);
     }
 }

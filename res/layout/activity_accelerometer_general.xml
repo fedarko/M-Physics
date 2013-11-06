@@ -24,57 +24,49 @@ This file is part of M-Physics.
 	    android:layout_height="wrap_content" >
 	
 	    <TextView
-	        android:id="@+id/se_titletext"
+	        android:id="@+id/accelgen_titletext"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentTop="true"
 	        android:layout_centerHorizontal="true"
-	        android:text="@string/se_titletext"
+	        android:text="@string/accelgen_titletext"
 	        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 	    <TextView
-	        android:id="@+id/se_intro"
+	        android:id="@+id/accelgen_headertext"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/se_titletext"
+	        android:layout_below="@+id/accelgen_titletext"
 	        android:layout_centerHorizontal="true"
-	        android:text="@string/se_intro" />
-
-	    <TextView
-	        android:id="@+id/se_age_title"
+	        android:text="@string/accelgen_headertext" />
+	    	   
+	   	<Button
+	        android:id="@+id/AccelerometerInfoButton"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/se_intro"
-	        android:layout_centerHorizontal="true"
-	        android:layout_marginTop="20dp"
-	        android:text="@string/se_age_title"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />	    
-
-	    <TextView
-	        android:id="@+id/se_age_explanation"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/se_age_title"
-	        android:layout_centerHorizontal="true"
-	        android:text="@string/se_age_explanation" />
-
-	    <TextView
-	        android:id="@+id/se_math_title"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/se_age_explanation"
+	        android:layout_below="@+id/accelgen_headertext"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="20dp"
-	        android:text="@string/se_math_title"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />	    
-
-	    <TextView
-	        android:id="@+id/se_math_explanation"
+	        android:text="@string/AccelerometerInfoButton"
+	        android:onClick="goToAccelInfoScreen" />
+	   	
+	   	<TextView
+	        android:id="@+id/acceltestdesc"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/se_math_title"
+	        android:layout_below="@+id/AccelerometerInfoButton"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/acceltestdesc" />
+	   	   	
+	   	<Button
+	        android:id="@+id/AccelerometerTestButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/acceltestdesc"
 	        android:layout_centerHorizontal="true"
-	        android:text="@string/se_math_explanation" />
-	    	    	    
+	        android:layout_marginTop="20dp"
+	        android:text="@string/AccelerometerTestButton"
+	        android:onClick="goToAccelTestScreen" />
+	   		    	         
 	</RelativeLayout>
 </ScrollView>

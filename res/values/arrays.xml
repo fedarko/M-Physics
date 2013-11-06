@@ -45,17 +45,15 @@ This file is part of M-Physics.
     </string-array>    
 
     <string-array name="pref_age_entries">
-        <item>7 or less</item>
-        <item>8 &#8211; 9</item>
-        <item>10 &#8211; 12</item>
-        <item>13 or above</item>
+        <item>10 or less</item>
+        <item>11 &#8211; 13</item>
+        <item>14 or above</item>
     </string-array>
     
     <string-array name="pref_age_values">
-        <item>7</item>
-        <item>8</item>   
         <item>10</item>
-        <item>13</item>
+        <item>11</item>
+        <item>14</item>
     </string-array>        
     
 </resources>

@@ -42,11 +42,6 @@ public class MassWeightActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
     	switch(item.getItemId()) {
-    	
-    		case R.id.menu_settings:
-    			Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-    			startActivity(i);
-    	    	return true;
     	    	
     		case R.id.menu_credits:
     			Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);

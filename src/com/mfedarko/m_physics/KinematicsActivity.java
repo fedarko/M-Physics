@@ -20,51 +20,55 @@
 package com.mfedarko.m_physics;
 
 import android.os.Bundle;
-//import android.preference.PreferenceManager;
+import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.content.Intent;
-//import android.content.SharedPreferences;
+import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-//import android.widget.TextView;
+import android.widget.TextView;
 
 public class KinematicsActivity extends Activity {
 
+	private TextView motionterms_overview;
+	private TextView kineqs_overview;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kinematics);
-        
-//        addAdaption();
+        motionterms_overview = (TextView) findViewById(R.id.motionterms_overview);
+        kineqs_overview = (TextView) findViewById(R.id.kineqs_overview);
     }
-
-//    public void addAdaption() {
-//        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-//        int mathlevel = Integer.parseInt(sharedPrefs.getString("pref_mathlevel", "-1"));
-//        int agelevel = Integer.parseInt(sharedPrefs.getString("pref_agelevel", "6"));
-//        
-//        TextView kinematics_explanation = (TextView) findViewById(R.id.kinematics_explanation);
-//        
-////        if (agelevel < 7) {
-////        	
-////        }
-//    }
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_kinematics, menu);
         return true;
     }
+
+    public void onResume() {
+    	super.onResume();
+    	SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+    	String age = preferences.getString("pref_age", "10");
+    	if (age.equals("10")) {
+    		motionterms_overview.setText(R.string.motionterms_overview10);
+    		kineqs_overview.setText(R.string.kineqs_overview10);
+    	}
+    	else if (age.equals("11")) {
+    		motionterms_overview.setText(R.string.motionterms_overview11);
+    		kineqs_overview.setText(R.string.kineqs_overview11);
+    	}
+    	else if (age.equals("14")) {
+    		motionterms_overview.setText(R.string.motionterms_overview14);
+    		kineqs_overview.setText(R.string.kineqs_overview14);
+    	}
+    }    
     
     public boolean onOptionsItemSelected(MenuItem item) {
 
     	switch(item.getItemId()) {
-    	
-    		case R.id.menu_settings:
-    			Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-    			startActivity(i);
-    	    	return true;
     	    	
     		case R.id.menu_credits:
     			Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);
@@ -86,8 +90,8 @@ public class KinematicsActivity extends Activity {
     	startActivity(i);
     }
     
-    public void goToAccelerometerTestScreen(View view) {
-    	Intent i = new Intent(getApplicationContext(), AccelerometerTestActivity.class);
+    public void goToAccelerometerScreen(View view) {
+    	Intent i = new Intent(getApplicationContext(), AccelerometerGeneralActivity.class);
     	startActivity(i);   	
     }
     

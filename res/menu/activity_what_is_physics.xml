@@ -22,10 +22,4 @@ This file is part of M-Physics.
         android:orderInCategory="1"
         android:showAsAction="never"
         android:icon="@android:drawable/ic_menu_info_details" />
-    
-    <item android:id="@+id/menu_settings"
-        android:title="@string/menu_settings"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:icon="@android:drawable/ic_menu_preferences" />
 </menu>

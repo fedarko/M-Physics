@@ -20,10 +20,8 @@
 package com.mfedarko.m_physics;
 
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Matrix;
 import android.text.Html;
 import android.view.Menu;
@@ -49,8 +47,6 @@ public class CannonActivity extends Activity {
 	private boolean correct_data;
 	private String ball_tag = "Ball";
 	
-	private int mathlevel;
-	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,18 +62,8 @@ public class CannonActivity extends Activity {
         verteqtext = (TextView) findViewById(R.id.cannon_verteq);
         horzeqtext = (TextView) findViewById(R.id.cannon_horzeq);
         
-        addAdaption(); //TODO Call this in Preferences.onPreferenceChangedListener
     }
-
-    public void addAdaption() {
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        mathlevel = Integer.parseInt(sharedPrefs.getString("pref_mathlevel", "-1"));
-        
-        if (mathlevel < 4) {
-        	verteqtext.setText("");
-        	horzeqtext.setText("");
-        }
-    }
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_cannon, menu);
@@ -150,10 +136,8 @@ public class CannonActivity extends Activity {
     	dxtext.setText(String.format("Horizontal Distance traveled: %.3f", dx));
     	dytext.setText(String.format("Vertical Distance to peak of path: %.3f", dy));
 
-    	if (mathlevel > 4) {
-	    	verteqtext.setText(Html.fromHtml(String.format("<i>y = %.3ft - 4.9t<sup><small>2</small></sup></i>", viy)));    		
-	    	horzeqtext.setText(Html.fromHtml(String.format("<i>x = %.3ft</i>", vx)));
-    	}
+    	verteqtext.setText(Html.fromHtml(String.format("<i>y = %.3ft - 4.9t<sup><small>2</small></sup></i>", viy)));    		
+    	horzeqtext.setText(Html.fromHtml(String.format("<i>x = %.3ft</i>", vx)));
     }
     
     public void rotateCannon(double angle) {
@@ -235,11 +219,6 @@ public class CannonActivity extends Activity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-	    	
-			case R.id.menu_settings:
-				Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-				startActivity(i);
-		    	return true;
 		    	
 			case R.id.menu_credits:
 				Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);

@@ -21,10 +21,7 @@ package com.mfedarko.m_physics;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Intent;
 import android.text.method.LinkMovementMethod;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.TextView;
 
 public class CreditsActivity extends Activity {
@@ -38,26 +35,4 @@ public class CreditsActivity extends Activity {
         TextView sourceInfo = (TextView) findViewById(R.id.credits_source);
         sourceInfo.setMovementMethod(LinkMovementMethod.getInstance());
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_credits, menu);
-        return true;
-    }
-
-    
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-    	switch(item.getItemId()) {
-    	
-			case R.id.menu_settings:
-				Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-				startActivity(i);
-		    	return true;
-		    	
-		    default:
-		    	return super.onOptionsItemSelected(item);
-    	}   	
-    }
-
 }

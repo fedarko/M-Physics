@@ -47,7 +47,7 @@ This file is part of M-Physics.
 	        android:layout_below="@+id/kinematics_explanation"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="20dp"
-	        android:text="@string/motionterms_overview" />
+	        android:text="@string/motionterms_overview10" />
 	   		   	
 	   	<Button
 	        android:id="@+id/MotionTermsButton"
@@ -66,7 +66,7 @@ This file is part of M-Physics.
 	        android:layout_below="@+id/MotionTermsButton"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="20dp"
-	        android:text="@string/kineqs_overview" />	   	
+	        android:text="@string/kineqs_overview10" />	   	
 	   		    
 	   	<Button
 	        android:id="@+id/KinEqsButton"
@@ -79,29 +79,29 @@ This file is part of M-Physics.
 	        android:onClick="goToKinEqsScreen" />
 	   	
 		<TextView
-	        android:id="@+id/accelerometer_test_overview"
+	        android:id="@+id/accelerometer_overview"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_below="@+id/KinEqsButton"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="20dp"
-	        android:text="@string/accelerometer_test_overview" />	   	
+	        android:text="@string/accelerometer_overview" />	   	
 	   		    
 	   	<Button
-	        android:id="@+id/AccelerometerTestButton"
+	        android:id="@+id/AccelerometerGeneralButton"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/accelerometer_test_overview"
+	        android:layout_below="@+id/accelerometer_overview"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="20dp"
-	        android:text="@string/AccelerometerTestButton"
-	        android:onClick="goToAccelerometerTestScreen" />
+	        android:text="@string/AccelerometerButton"
+	        android:onClick="goToAccelerometerScreen" />
 	   	
 		<TextView
 	        android:id="@+id/projectile_motion_overview"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/AccelerometerTestButton"
+	        android:layout_below="@+id/AccelerometerGeneralButton"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="20dp"
 	        android:text="@string/projectile_motion_overview" />	   	

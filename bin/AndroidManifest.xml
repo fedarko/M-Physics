@@ -1,18 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mfedarko.m_physics"
-    android:versionCode="3"
-    android:versionName="1.02" >
+    android:versionCode="4"
+    android:versionName="1.1" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+        android:minSdkVersion="3"
+        android:targetSdkVersion="17" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
 
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="com.mfedarko.m_physics.MainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,21 +29,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".WhatIsPhysicsActivity"
+            android:name="com.mfedarko.m_physics.WhatIsPhysicsActivity"
             android:label="@string/title_activity_what_is_physics" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".WhereToStartActivity"
+            android:name="com.mfedarko.m_physics.WhereToStartActivity"
             android:label="@string/title_activity_where_to_start" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".KinematicsActivity"
+            android:name="com.mfedarko.m_physics.KinematicsActivity"
             android:label="@string/title_activity_kinematics" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -49,110 +57,99 @@
                 android:value="com.mfedarko.m_physics.KinematicsActivity" />
         </activity>
         <activity
-            android:name=".MotionTermsActivity"
+            android:name="com.mfedarko.m_physics.MotionTermsActivity"
             android:label="@string/title_activity_motion_terms" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.KinematicsActivity" />
         </activity>
         <activity
-            android:name=".NewtonsLawsActivity"
+            android:name="com.mfedarko.m_physics.NewtonsLawsActivity"
             android:label="@string/title_activity_newtons_laws" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".MassWeightActivity"
+            android:name="com.mfedarko.m_physics.MassWeightActivity"
             android:label="@string/title_activity_mass_weight" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".UnitsActivity"
+            android:name="com.mfedarko.m_physics.UnitsActivity"
             android:label="@string/title_activity_units" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".AccelerometerTestActivity"
+            android:name="com.mfedarko.m_physics.AccelerometerTestActivity"
             android:label="@string/title_activity_accelerometer_test"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mfedarko.m_physics.KinematicsActivity" />
+                android:value="com.mfedarko.m_physics.AccelerometerGeneralActivity" />
         </activity>
         <activity
-            android:name=".WEPActivity"
+            android:name="com.mfedarko.m_physics.WEPActivity"
             android:label="@string/title_activity_wep" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".EnergyActivity"
+            android:name="com.mfedarko.m_physics.EnergyActivity"
             android:label="@string/title_activity_energy" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.WEPActivity" />
         </activity>
         <activity
-            android:name=".TypesOfEnergyActivity"
+            android:name="com.mfedarko.m_physics.TypesOfEnergyActivity"
             android:label="@string/title_activity_types_of_energy" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.WEPActivity" />
         </activity>
         <activity
-            android:name=".KineticEnergyActivity"
+            android:name="com.mfedarko.m_physics.KineticEnergyActivity"
             android:label="@string/title_activity_kinetic_energy" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.TypesOfEnergyActivity" />
         </activity>
         <activity
-            android:name=".PotentialEnergyActivity"
+            android:name="com.mfedarko.m_physics.PotentialEnergyActivity"
             android:label="@string/title_activity_potential_energy" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.TypesOfEnergyActivity" />
         </activity>
         <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" >
-        </activity>
-        <activity
-            android:name=".SettingsExplanationActivity"
-            android:label="@string/title_activity_settings_explanation" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.mfedarko.m_physics.MainActivity" />
-        </activity>
-        <activity
-            android:name=".ForcesActivity"
+            android:name="com.mfedarko.m_physics.ForcesActivity"
             android:label="@string/title_activity_forces" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".ProjectileMotionActivity"
+            android:name="com.mfedarko.m_physics.ProjectileMotionActivity"
             android:label="@string/title_activity_projectile_motion" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.KinematicsActivity" />
         </activity>
         <activity
-            android:name=".ProjectileMotionProblemActivity"
+            android:name="com.mfedarko.m_physics.ProjectileMotionProblemActivity"
             android:label="@string/title_activity_projectile_motion_problem" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.ProjectileMotionActivity" />
         </activity>
         <activity
-            android:name=".CannonActivity"
+            android:name="com.mfedarko.m_physics.CannonActivity"
             android:label="@string/title_activity_cannon"
             android:screenOrientation="portrait" >
             <meta-data
@@ -160,25 +157,41 @@
                 android:value="com.mfedarko.m_physics.ProjectileMotionActivity" />
         </activity>
         <activity
-            android:name=".CreditsActivity"
+            android:name="com.mfedarko.m_physics.CreditsActivity"
             android:label="@string/title_activity_credits" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.MainActivity" />
         </activity>
         <activity
-            android:name=".PMNonAngledLaunchActivity"
+            android:name="com.mfedarko.m_physics.PMNonAngledLaunchActivity"
             android:label="@string/title_activity_pmnon_angled_launch" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.ProjectileMotionProblemActivity" />
         </activity>
         <activity
-            android:name=".AngularProjectilesActivity"
+            android:name="com.mfedarko.m_physics.AngularProjectilesActivity"
             android:label="@string/title_activity_angular_projectiles" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mfedarko.m_physics.ProjectileMotionProblemActivity" />
+        </activity>
+        <activity
+            android:name="com.mfedarko.m_physics.AccelerometerGeneralActivity"
+            android:label="@string/title_activity_accelerometer_general"
+            android:parentActivityName="com.mfedarko.m_physics.KinematicsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.m_physics.KinematicsActivity" />
+        </activity>
+        <activity
+            android:name="com.mfedarko.m_physics.AccelerometerInfoActivity"
+            android:label="@string/title_activity_accelerometer_info"
+            android:parentActivityName="com.mfedarko.m_physics.AccelerometerGeneralActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mfedarko.m_physics.AccelerometerGeneralActivity" />
         </activity>
     </application>
 

@@ -27,12 +27,13 @@ import android.view.MenuItem;
 
 public class WhatIsPhysicsActivity extends Activity {
 
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_what_is_physics);
     }
-
+    
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_what_is_physics, menu);
@@ -41,11 +42,6 @@ public class WhatIsPhysicsActivity extends Activity {
     
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-    	
-			case R.id.menu_settings:
-				Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-				startActivity(i);
-		    	return true;
 		    	
 			case R.id.menu_credits:
 				Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);

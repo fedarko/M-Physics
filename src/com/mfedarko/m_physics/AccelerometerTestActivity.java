@@ -37,6 +37,8 @@ import android.widget.TextView;
 public class AccelerometerTestActivity extends Activity implements SensorEventListener, OnTouchListener {
 	private SensorManager mSensorManager;
 	private Sensor mAccelerometer;
+
+	private boolean hasAccelerometer;
 	
 	private ImageView accelerometer_test_sprite;
 	
@@ -63,7 +65,12 @@ public class AccelerometerTestActivity extends Activity implements SensorEventLi
 
     public void onResume() {
     	super.onResume();
-    	mSensorManager.registerListener(this, mAccelerometer, 0);
+    	hasAccelerometer = mSensorManager.registerListener(this, mAccelerometer, 0);
+    	if (!hasAccelerometer) {
+    		xAccelText.setText(R.string.no_accelerometer_errortext);
+    		yAccelText.setText("");
+    		zAccelText.setText("");
+    	}
     }
     
     public void onPause() {
@@ -82,9 +89,9 @@ public class AccelerometerTestActivity extends Activity implements SensorEventLi
 			double accelZ = event.values[2];
 			accelerometer_test_sprite.scrollBy((int) (2 * accelX), (int) (-2 * accelY));		
 			
-			xAccelText.setText(String.format("x-accel = %.3f", -accelX));
-			yAccelText.setText(String.format("y-accel = %.3f", -accelY));
-			zAccelText.setText(String.format("z-accel = %.3f", -accelZ));
+			xAccelText.setText(String.format("x-accel = %.3f", accelX));
+			yAccelText.setText(String.format("y-accel = %.3f", accelY));
+			zAccelText.setText(String.format("z-accel = %.3f", accelZ));
 		}
 	}
 
@@ -103,11 +110,6 @@ public class AccelerometerTestActivity extends Activity implements SensorEventLi
     
     public boolean onOptionsItemSelected(MenuItem item) {
     	switch(item.getItemId()) {
-    	
-			case R.id.menu_settings:
-				Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
-				startActivity(i);
-		    	return true;
 		    	
 			case R.id.menu_credits:
 				Intent i1 = new Intent(getApplicationContext(), CreditsActivity.class);

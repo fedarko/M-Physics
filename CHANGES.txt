@@ -1,0 +1,64 @@
+M-Physics |
+----------+
+CHANGES   |
+----------+
+Marcus Fedarko
+marcus.fedarko@gmail.com
+========================
+
+V1.1
+----
+11/6/2013
+==========
+-Added this file to make tracking changes easier
+
+-Added support for versions of Android after and including 1.5.
+
+-Added checking for if the user doesn't have an accelerometer
+ installed and can't use the accelerometer test.
+ 
+-In a related note, added <uses-feature> tags to the application
+ manifest for accelerometer and portrait mode. I didn't know this was
+ an option, and I definitely should've added it sooner to make the app more
+ compatible with more devices. Ugh... next time :-)
+ 
+-Decided to can the settings features with math/age levels. While it was a good
+ idea in theory, I couldn't come up with a clean and easy way to implement it, and
+ it was holding me back from working more on the project. I think I've cleared out
+ all the files/etc. I was using or intending to use for settings stuff, but I might have
+ left some in, resulting in errors/inefficiencies - if you see anything like that, please
+ contact me so I can rectify the issue and release a patch.
+ 
+-Expanded the section on Accelerometers in the Kinematics section: added a "General Accelerometers"
+ page that led to the Accelerometer Test and a new "Accelerometer Info" page with a diagram and
+ some information on accelerometers.
+ 
+-Fixed some formatting to make the app look more consistent
+ 
+-----  
+V1.02
+-----
+6/6/2013
+========
+
+-Fixed bug causing text to go off the screen on certain devices
+-Added section on angular projectile motion
+-Fixed organization and formatting of some sections
+
+-----
+V1.01
+-----
+4/25/2013
+=========
+
+-Added diagram to Mass vs. Weight section
+-Improved formatting
+-Minor bug-fixes
+
+----
+V1.0
+----
+4/17/2013
+=========
+
+-Released M-Physics on Google Play store

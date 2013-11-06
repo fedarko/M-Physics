@@ -24,96 +24,88 @@ This file is part of M-Physics.
 	    android:layout_height="wrap_content" >
 	
 	    <TextView
-	        android:id="@+id/wep_titletext"
+	        android:id="@+id/accelinfo_titletext"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentTop="true"
 	        android:layout_centerHorizontal="true"
-	        android:text="@string/wep_titletext"
+	        android:text="@string/accelinfo_titletext"
 	        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 	    <TextView
-	        android:id="@+id/wep_intro"
+	        android:id="@+id/accelinfo_desc_title"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/wep_titletext"
-	        android:layout_centerHorizontal="true"
-	        android:text="@string/wep_intro" />	
-	           
-	    <TextView
-	        android:id="@+id/work_title"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/wep_intro"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="10dp"
-	        android:text="@string/work_title"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-		<TextView
-	        android:id="@+id/work_explanation"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/work_title"
-	        android:layout_centerHorizontal="true"
-	        android:layout_marginTop="10dp"
-	        android:text="@string/work_explanation" />	 
-	    	    	    
-	    <TextView
-	        android:id="@+id/energy_title"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/work_explanation"
-	        android:layout_centerHorizontal="true"
-	        android:layout_marginTop="10dp"
-	        android:text="@string/energy_title"
+	        android:layout_below="@+id/accelinfo_titletext"
+	        android:text="@string/accelinfo_desc_title"
 	        android:textAppearance="?android:attr/textAppearanceMedium" />	    
-
-		<TextView
-	        android:id="@+id/energy_explanation"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/energy_title"
-	        android:layout_centerHorizontal="true"
-	        android:layout_marginTop="10dp"
-	        android:text="@string/energy_explanation" />	        
-
-		<Button
-	        android:id="@+id/TypesOfEnergyButton"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/energy_explanation"
-	        android:layout_centerHorizontal="true"
-	        android:text="@string/TypesOfEnergyButton"
-	        android:onClick="goToTypesOfEnergyScreen" />
-					
-		<Button
-	        android:id="@+id/MiscEnergyButton"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/TypesOfEnergyButton"
-	        android:layout_centerHorizontal="true"
-	        android:text="@string/MiscEnergyButton"
-	        android:onClick="goToEnergyScreen" />
-						        
+	    
 	    <TextView
-	        android:id="@+id/power_title"
+	        android:id="@+id/accelinfo_headertext"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/MiscEnergyButton"
+	        android:layout_below="@+id/accelinfo_desc_title"
 	        android:layout_centerHorizontal="true"
-	        android:layout_marginTop="10dp"
-	        android:text="@string/power_title"
-	        android:textAppearance="?android:attr/textAppearanceMedium" />	
-	         
-		<TextView
-	        android:id="@+id/power_explanation"
+	        android:text="@string/accelinfo_headertext" />
+	    
+	    <ImageView
+	        android:id="@+id/phone_accelerometer_diagram"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_below="@+id/power_title"
+	        android:layout_below="@+id/accelinfo_headertext"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/phone_accelerometer_diagram"
+	        android:contentDescription="@string/ImageErrorMsg" />
+
+	    <TextView
+	        android:id="@+id/accelinfo_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/phone_accelerometer_diagram"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/accelinfo_2" />
+
+	    <TextView
+	        android:id="@+id/accelinfo_grav_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
 	        android:layout_centerHorizontal="true"
 	        android:layout_marginTop="10dp"
-	        android:text="@string/power_explanation" />	        
-	    	    	    	    	    	
+	        android:layout_below="@+id/accelinfo_2"
+	        android:text="@string/accelinfo_grav_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />	 	    
+	    
+	    <TextView
+	        android:id="@+id/accelinfo_4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/accelinfo_grav_title"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/accelinfo_4" />
+
+	    <TextView
+	        android:id="@+id/accelinfo_uses_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/accelinfo_4"
+	        android:text="@string/accelinfo_uses_title"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />	 	    
+	    
+	    <TextView
+	        android:id="@+id/accelinfo_3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/accelinfo_uses_title"
+	        android:layout_marginTop="10dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/accelinfo_3" />
+	    		    	         
 	</RelativeLayout>
 </ScrollView>
